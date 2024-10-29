@@ -1,0 +1,10 @@
+[
+  {
+    "text": "What documents are required to open an account?",
+    "intent": "account_opening",
+    "intent_prediction": {
+      "name": "account_documents",
+      "confidence": 0.9122061133384705
+    }
+  }
+]

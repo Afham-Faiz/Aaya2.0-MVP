@@ -1,0 +1,1014 @@
+version: "3.1"
+
+intents:
+  - greet                 # 1
+  - goodbye              # 2
+  - affirm               # 3
+  - deny                 # 4
+  - thank                # 5
+  - help                 # 6
+  - menu                 # 7
+  - human_handoff        # 8
+  - restart              # 9
+  - out_of_scope         # 10
+  - account_types        # 11
+  - account_opening      # 12
+  - minimum_balance      # 13
+  - account_fees         # 14
+  - account_documents    # 15
+  - savings_interest     # 16
+  - joint_account        # 17
+  - foreign_currency_account  # 18
+  - islamic_account      # 19
+  - account_status       # 20
+  - mobile_banking_register  # 21
+  - internet_banking_register # 22
+  - reset_password       # 23
+  - forgot_username      # 24
+
+  - app_download         # 26
+  - app_features         # 27
+  - transaction_limits   # 28
+  - digital_security     # 29
+  
+  - card_types           # 31
+  - card_application     # 32
+  - card_activation      # 33
+  - card_blocking        # 34
+  - card_limits          # 35
+  - card_fees            # 36
+  - card_replacement     # 37
+  - international_usage  # 38
+
+ 
+  - balance_inquiry      # 41
+  - fund_transfer        # 42
+
+  - utility_payment     # 44
+  - international_transfer # 45
+  - transfer_charges    # 46
+  - beneficiary_management # 47
+  - standing_order      # 48
+  - exchange_rates      # 49
+  - transfer_status     # 50
+
+responses:
+  utter_greet:  # 1
+    - text: "Welcome to Bank of Maldives! I'm your personal banking assistant. How can I make your banking experience better today?"
+    - text: "Hello! Thank you for choosing Bank of Maldives. I'm here to help you with all your banking needs. What would you like to explore?"
+
+  utter_goodbye:  # 2
+    - text: "Thank you for banking with BML. Remember, our mobile app is available 24/7 for your convenience. Have a wonderful day!"
+    - text: "It was great helping you today. For urgent assistance, our 24/7 hotline (332 2948) is always available. Take care!"
+
+  utter_affirm:  # 3
+    - text: "Excellent! I'll help you with that right away. Please allow me a moment to provide you with the most accurate information."
+    - text: "Perfect! I understand what you need. Let me guide you through the process step by step."
+
+  utter_deny:  # 4
+    - text: "I understand this isn't what you're looking for. Could you please tell me more about what you need? I want to make sure I provide the right assistance."
+    - text: "No problem at all. Let's find what works best for you. What specific information or service would be more helpful?"
+
+  utter_thank:  # 5
+    - text: "It's my pleasure to help! Remember, you can always access our digital banking services 24/7 through our mobile app or website. Is there anything else you'd like to know?"
+    - text: "You're welcome! Don't forget to check out our latest banking features in the BML Mobile app. Would you like to learn about any other services?"
+
+  utter_help:  # 6
+    - text: |
+        I'm here to assist you with any of these banking services:
+        📱 Digital Banking - Mobile & Internet banking, password help
+        💳 Cards - Credit, debit, and prepaid cards
+        💰 Accounts - Savings, current, Islamic banking
+        🔄 Transfers & Payments - Local & international transfers
+        📊 Account Management - Statements, fees, limits
+        
+        What area would you like to explore?
+
+  utter_menu:  # 7
+    - text: |
+        Here's our complete service menu:
+        
+        🏦 Banking Services:
+        1. Account Opening & Management
+        2. Digital Banking Solutions
+        3. Card Services
+        4. Transfers & Payments
+        5. Islamic Banking
+        6. Loans & Financing
+        
+        💡 Additional Services:
+        7. Foreign Exchange
+        8. Investment Options
+        9. Insurance Services
+        
+        Which service interests you?
+
+  utter_human_handoff:  # 8
+    - text: |
+        I'll connect you with our expert customer service team right away:
+        
+        📞 24/7 Hotline: 332 2948
+        🏢 Visit: Any BML branch nationwide
+        📧 Email: info@bml.com.mv
+        💬 Live Chat: Available on our website
+        
+        Priority queue times:
+        - Phone: < 5 minutes
+        - Branch: < 15 minutes
+        - Email: Response within 4 hours
+        
+        Would you like me to provide branch locations near you?
+
+  utter_restart:  # 9
+    - text: "Let's start fresh! I've reset our conversation and I'm ready to help you with any banking service or information you need. What would you like to know?"
+    - text: "I've cleared our previous conversation. You have my full attention - how can I assist you with your banking needs today?"
+
+  utter_out_of_scope:  # 10
+    - text: "I specialize in Bank of Maldives services and can't assist with that particular request. However, I'd be happy to help you with any banking, cards, transfers, or account services. What banking assistance do you need?"
+    - text: "While I focus on banking services, I notice your query is outside my expertise. Let me connect you with someone who can better assist, or we can explore any banking-related questions you have."
+
+  utter_account_types:  # 11
+    - text: |
+        Here are our comprehensive account options:
+        
+        💰 Personal Accounts:
+        1. Savings Account
+           - 0.5% annual interest
+           - Free digital banking
+           - Instant card issuance
+        
+        2. Current Account
+           - Unlimited transactions
+           - Checkbook facility
+           - Business payments
+        
+        3. Fixed Deposit
+           - Up to 4.5% interest
+           - Flexible terms
+           - Auto-renewal option
+        
+        4. Foreign Currency
+           - Multiple currencies
+           - International transfers
+           - Exchange benefits
+        
+        5. Islamic Banking
+           - Shariah-compliant
+           - Profit-sharing
+           - Islamic financing
+        
+        Would you like details about any specific account?
+
+  utter_account_opening:  # 12
+    - text: |
+        Ready to open your BML account? Here's everything you need:
+        
+        📋 Required Documents:
+        - Valid ID card/Passport
+        - Recent photo
+        - Proof of address (utility bill/rental agreement)
+        - Income proof (salary slips/employment letter)
+        
+        💫 Special Features:
+        - Same-day account opening
+        - Free debit card
+        - Mobile banking access
+        - Welcome gift for new customers
+        
+        🌟 Bonus Benefits:
+        - No opening fee
+        - Free first checkbook
+        - Digital banking setup assistance
+        
+        Would you like to schedule an appointment at your nearest branch?
+
+  utter_minimum_balance:  # 13
+    - text: |
+        Our account minimum balances are designed to be accessible:
+        
+        💰 Standard Accounts:
+        - Savings: MVR 100
+        - Current: MVR 1,000
+        - Foreign Currency: USD 100
+        
+        💎 Premium Accounts:
+        - Gold: MVR 50,000
+        - Platinum: MVR 100,000
+        
+        ⭐ Benefits of maintaining higher balances:
+        - Reduced fees
+        - Priority service
+        - Better interest rates
+        - Special exchange rates
+        
+        Need help choosing the right account type?
+
+  utter_account_fees:  # 14
+    - text: |
+        Let me break down our transparent fee structure:
+        
+        📊 Monthly Fees:
+        - Savings: No fee with minimum balance
+        - Current: MVR 50 (waived with MVR 5000 balance)
+        - Premium: MVR 200 (includes premium benefits)
+        
+        💳 Transaction Fees:
+        - ATM withdrawals: Free at BML
+        - Other bank ATMs: MVR 10
+        - International: 2% of amount
+        
+        📑 Service Fees:
+        - Statement: Free online, MVR 50 printed
+        - Checkbook: MVR 100
+        - Balance certificate: MVR 150
+        
+        💡 Fee Waiver Options:
+        - Maintain minimum balance
+        - Use digital banking
+        - Bundle services
+        
+        Would you like to learn how to minimize your banking fees?
+
+  utter_account_documents:  # 15
+    - text: |
+        Here's your complete document checklist:
+        
+        📋 Basic Documents (Required):
+        1. ID/Passport (original + copy)
+        2. Recent passport photo
+        3. Proof of address (< 3 months old)
+        
+        💼 Employment/Income Proof (Any one):
+        - Salary certificate
+        - Employment contract
+        - Bank statements
+        - Tax returns
+        
+        🏠 Address Verification (Any one):
+        - Utility bill
+        - Rental agreement
+        - House registry
+        
+        📱 Additional Requirements:
+        - Mobile number
+        - Email address
+        - Reference contact
+        
+        Need help preparing your documents?
+
+  utter_savings_interest:  # 16
+    - text: |
+        Our competitive savings interest rates:
+        
+        💰 Regular Savings:
+        - Basic: 0.5% p.a.
+        - Premium: Up to 1% p.a.
+        - Youth: 0.75% p.a.
+        
+        🌟 Special Savings:
+        - Goal Saver: Up to 2% p.a.
+        - Senior Citizen: 1.25% p.a.
+        - Student: 1% p.a.
+        
+        📈 Interest Calculation:
+        - Daily calculation
+        - Monthly payout
+        - Compound interest
+        
+        Want to calculate your potential earnings?
+
+  utter_joint_account:  # 17
+    - text: |
+        Joint Account Options:
+        
+        👥 Available Types:
+        1. Savings Joint Account
+        2. Current Joint Account
+        3. Foreign Currency Joint
+        
+        📋 Requirements (Both Parties):
+        - Valid ID/Passport
+        - Proof of address
+        - Recent photographs
+        - Relationship proof (if family)
+        
+        🔐 Operating Instructions:
+        - Either or Survivor
+        - Jointly operated
+        - Primary/Secondary holders
+        
+        💡 Special Features:
+        - Individual cards
+        - Separate online banking
+        - Unified statements
+        
+        Ready to open a joint account?
+
+  utter_foreign_currency_account:  # 18
+    - text: |
+        Explore our Foreign Currency Accounts:
+        
+        💱 Available Currencies:
+        - US Dollar (USD)
+        - Euro (EUR)
+        - British Pound (GBP)
+        - Japanese Yen (JPY)
+        
+        🌟 Benefits:
+        - Zero conversion fees
+        - International transfers
+        - Multi-currency cards
+        - Exchange rate protection
+        
+        💰 Account Features:
+        - Minimum balance: USD 100
+        - Online banking access
+        - International debit card
+        - SWIFT transfers
+        
+        Want to know today's exchange rates?
+
+  utter_islamic_account:  # 19
+    - text: |
+        Shariah-Compliant Banking Solutions:
+        
+        🕌 Account Types:
+        1. Islamic Savings (Mudarabah)
+        2. Islamic Current (Qard)
+        3. Investment Account (Wakala)
+        
+        📈 Profit Sharing:
+        - Monthly distribution
+        - Transparent calculation
+        - Competitive rates
+        
+        🌟 Special Features:
+        - Shariah board approved
+        - Halal investments
+        - Islamic financing
+        - Zakat calculation
+        
+        Would you like to speak with our Islamic banking specialist?
+
+  utter_account_status:  # 20
+    - text: |
+        Check your account status through:
+        
+        📱 Digital Channels:
+        1. Mobile Banking
+           - Real-time balance
+           - Transaction history
+           - Statement download
+        
+        💻 Internet Banking:
+           - Detailed analytics
+           - Custom reports
+           - E-statements
+        
+        🏢 Branch Services:
+           - Printed statements
+           - Balance certificate
+           - Account verification
+        
+        Need help accessing your account information?
+
+  utter_mobile_banking_register:  # 21
+    - text: |
+        Register for BML Mobile Banking in minutes:
+        
+        📱 Quick Registration:
+        1. Download BML Mobile App
+        2. Click 'Register Now'
+        3. Enter card details
+        4. Create credentials
+        5. Verify with OTP
+        
+        🔐 Security Features:
+        - Biometric login
+        - 2-factor authentication
+        - Transaction limits
+        
+        💫 Instant Access to:
+        - Account balance
+        - Fund transfers
+        - Bill payments
+        - Card management
+        
+        Need help with registration?
+
+  utter_internet_banking_register:  # 22
+    - text: |
+        Set up Internet Banking today:
+        
+        💻 Registration Steps:
+        1. Visit www.bankofmaldives.com.mv
+        2. Click 'Register for Internet Banking'
+        3. Fill in account details
+        4. Set security questions
+        5. Receive activation code
+        
+        🛡️ Security Measures:
+        - Secure password rules
+        - OTP verification
+        - Activity monitoring
+        
+        📊 Features Include:
+        - Full account access
+        - Transaction history
+        - Standing orders
+        - Statement download
+        
+        Would you like assistance with registration?
+
+  utter_reset_password:  # 23
+    - text: |
+        Reset your password securely:
+        
+        🔄 Online Reset:
+        1. Click 'Forgot Password'
+        2. Enter username
+        3. Verify identity
+        4. Create new password
+        5. Confirm with OTP
+        
+        📞 Phone Reset:
+        1. Call 332 2948
+        2. Verify identity
+        3. Request reset
+        4. Receive temporary password
+        
+        🏢 Branch Reset:
+        - Visit with ID
+        - Immediate assistance
+        - New password setup
+        
+        Need immediate help?
+
+  utter_forgot_username:  # 24
+    - text: |
+        Recover your username easily:
+        
+        📱 Mobile Recovery:
+        1. Open BML Mobile
+        2. Click 'Forgot Username'
+        3. Enter registered mobile
+        4. Verify with OTP
+        
+        💻 Online Recovery:
+        1. Visit website
+        2. Select 'Username Help'
+        3. Provide account details
+        4. Verify identity
+        
+        🔐 Security Checks:
+        - Account verification
+        - ID confirmation
+        - Security questions
+        
+        Would you like assistance now?
+
+  utter_app_download:  # 26
+    - text: |
+        Download our secure banking app:
+        
+        📱 Download Options:
+        - iOS: App Store
+        - Android: Google Play
+        - Huawei: AppGallery
+        
+        ✨ Latest Version Features:
+        - Face/Touch ID login
+        - Dark mode support
+        - Widget support
+        - Instant notifications
+        
+        🔄 Update Benefits:
+        - Enhanced security
+        - Faster transactions
+        - New features
+        - Better performance
+        
+        Need help installing?    
+
+  utter_app_features:  # 27
+    - text: |
+        Explore BML Mobile's powerful features:
+        
+        💰 Banking:
+        - Instant balance view
+        - Transaction history
+        - Account nicknames
+        - Multiple accounts
+        
+        💸 Payments:
+        - QR payments
+        - Bill payments
+        - Scheduled transfers
+        - Bulk payments
+        
+        💳 Cards:
+        - Virtual cards
+        - Card blocking
+        - Limit management
+        - PIN view/change
+        
+        🔐 Security:
+        - Face/Touch ID
+        - Transaction OTP
+        - Login alerts
+        - Spending patterns
+        
+        Want a feature demo?
+
+  utter_transaction_limits:  # 28
+    - text: |
+        Your transaction limits explained:
+        
+        💳 Daily Limits:
+        - ATM: MVR 15,000
+        - POS: MVR 50,000
+        - Online: MVR 25,000
+        
+        📱 Mobile Banking:
+        - Local transfer: MVR 100,000
+        - Bill payment: MVR 50,000
+        - Own account: Unlimited
+        
+        🌏 International:
+        - Transfer: USD 10,000
+        - Card usage: USD 5,000
+        
+        💡 Limit Increase:
+        - Visit branch
+        - Submit income proof
+        - Quick approval
+        
+        Need a limit increase?
+
+  utter_digital_security:  # 29
+    - text: |
+        Your security is our priority:
+        
+        🔒 Login Security:
+        - Biometric authentication
+        - 2-factor verification
+        - Device registration
+        - Auto-logout
+        
+        💳 Transaction Security:
+        - OTP verification
+        - Spending alerts
+        - Fraud detection
+        - Instant blocking
+        
+        🛡️ Best Practices:
+        - Regular password changes
+        - Secure WiFi only
+        - App updates
+        - PIN protection
+        
+        Want security tips?
+
+  utter_card_types:  # 31
+    - text: |
+        Explore our card portfolio:
+        
+        💳 Debit Cards:
+        - Classic (Free)
+        - Gold (MVR 30/month)
+        - Platinum (MVR 50/month)
+        
+        💎 Credit Cards:
+        - Classic (3% cashback)
+        - Gold (5% cashback)
+        - Platinum (7% cashback)
+        - Infinite (10% cashback)
+        
+        🌟 Special Cards:
+        - Student card
+        - Business card
+        - Prepaid travel card
+        
+        Want to compare benefits?
+
+  utter_card_application:  # 32
+    - text: |
+        Apply for your ideal card:
+        
+        📝 Application Channels:
+        1. Mobile Banking
+        2. Online Banking
+        3. Branch Visit
+        4. Phone Application
+        
+        📋 Requirements:
+        - Valid ID
+        - Income proof
+        - Bank statements
+        - Employment letter
+        
+        ⚡ Fast Track:
+        - Instant approval
+        - Same-day collection
+        - Free delivery
+        
+        Ready to apply?
+
+  utter_card_activation:  # 33
+    - text: |
+        Activate your new card instantly:
+        
+        📱 Mobile Activation:
+        1. Open BML Mobile
+        2. Select 'Cards'
+        3. Choose 'Activate'
+        4. Enter card details
+        
+        🏧 ATM Activation:
+        1. Insert card
+        2. Enter PIN
+        3. Select 'Activate'
+        
+        📞 Phone Activation:
+        - Call 332 2948
+        - Follow prompts
+        - Instant activation
+        
+        Need activation help?
+
+  utter_card_blocking:  # 34
+    - text: |
+        Block your card immediately:
+        
+        🚫 Instant Blocking:
+        1. Mobile Banking
+        2. Call 332 2948
+        3. Branch visit
+        
+        🔐 Security Measures:
+        - Immediate effect
+        - Fraud prevention
+        - Transaction stop
+        
+        📋 Next Steps:
+        - Report unauthorized transactions
+        - Request replacement
+        - Update automatic payments
+        
+        Need emergency assistance?
+
+  utter_card_limits:  # 35
+    - text: |
+        Manage your card limits:
+        
+        💳 Default Limits:
+        - ATM: MVR 15,000/day
+        - POS: MVR 50,000/day
+        - Online: MVR 25,000/day
+        
+        🌏 International:
+        - ATM: USD 1,000/day
+        - Shopping: USD 3,000/day
+        
+        ⚡ Temporary Increases:
+        - Up to 48 hours
+        - Quick approval
+        - No fee
+        
+        Need a limit adjustment?
+
+  utter_card_fees:  # 36
+    - text: |
+        Understanding your card fees:
+        
+        💳 Annual Fees:
+        - Classic: MVR 180
+        - Gold: MVR 600
+        - Platinum: MVR 1,200
+        - Business: MVR 1,500
+        
+        🔄 Transaction Fees:
+        - Local ATM: Free
+        - Other Banks: MVR 30
+        - International: 3%
+        
+        🛠️ Service Fees:
+        - Replacement: MVR 150
+        - PIN reissue: MVR 50
+        - Express delivery: MVR 200
+        
+        💡 Fee Waivers:
+        - Annual spend targets
+        - Premium accounts
+        - Business packages
+        
+        Want to learn about fee exemptions?
+
+  utter_card_replacement:  # 37
+    - text: |
+        Replace your card quickly:
+        
+        📋 Replacement Process:
+        1. Report lost/damaged card
+        2. Choose replacement type
+        3. Pay replacement fee
+        4. Select delivery method
+        
+        ⚡ Express Service:
+        - Same-day issuance
+        - Priority processing
+        - Direct delivery
+        
+        🕒 Standard Timeline:
+        - Regular: 3-5 days
+        - Express: 24 hours
+        - International: 7-10 days
+        
+        Need urgent replacement?
+
+  utter_international_usage:  # 38
+    - text: |
+        Use your card worldwide:
+        
+        🌏 International Features:
+        - Worldwide acceptance
+        - Multi-currency support
+        - Contactless payments
+        - ATM access
+        
+        💰 Foreign Fees:
+        - Currency conversion: 2%
+        - International ATM: $3
+        - Foreign purchase: 1%
+        
+        🔐 Travel Security:
+        - Travel notification
+        - Fraud monitoring
+        - Emergency replacement
+        - 24/7 support
+        
+        Planning international travel?
+
+  utter_balance_inquiry:  # 41
+    - text: |
+        Check your balance instantly:
+        
+        📱 Digital Options:
+        1. Mobile Banking
+           - Real-time balance
+           - Mini statement
+           - Push notifications
+           
+        2. Internet Banking
+           - Detailed view
+           - Download statements
+           - Transaction history
+           
+        🏧 Other Methods:
+        - ATM inquiry
+        - SMS banking
+        - Branch visit
+        
+        Want to set balance alerts?
+
+  utter_fund_transfer:  # 42
+    - text: |
+        Transfer funds easily:
+        
+        💸 Transfer Types:
+        1. Local Transfers
+           - Own accounts: Free
+           - Other BML: Free
+           - Other banks: MVR 25
+           
+        2. International
+           - SWIFT transfer
+           - RemitNow
+           - Western Union
+        
+        ⚡ Features:
+        - Instant transfers
+        - Scheduled payments
+        - Bulk transfers
+        - Templates
+        
+        Ready to make a transfer?
+
+  utter_utility_payment:  # 44
+    - text: |
+        Pay utilities instantly:
+        
+        💡 Available Services:
+        1. Electricity (STELCO/FENAKA)
+        2. Water (MWSC)
+        3. Internet (Dhiraagu/Ooredoo)
+        4. TV (MediaNet)
+        
+        📱 Payment Features:
+        - Save account numbers
+        - View bill history
+        - Set reminders
+        - Auto-pay option
+        
+        💫 Benefits:
+        - No queues
+        - 24/7 service
+        - Instant receipt
+        - Payment history
+        
+        Ready to pay a bill?
+
+  utter_international_transfer:  # 45
+    - text: |
+        Send money worldwide:
+        
+        🌏 Transfer Options:
+        1. SWIFT Transfer
+           - 200+ countries
+           - All major currencies
+           - Bank-to-bank
+           
+        2. RemitNow
+           - Instant delivery
+           - Better rates
+           - Lower fees
+        
+        📋 Requirements:
+        - Beneficiary details
+        - SWIFT/BIC code
+        - Purpose of payment
+        - Source of funds
+        
+        Ready to send money?
+
+  utter_transfer_charges:  # 46
+    - text: |
+        Transfer fee breakdown:
+        
+        🏦 Local Transfers:
+        - Own accounts: Free
+        - BML to BML: Free
+        - Other banks: MVR 25
+        - Bulk transfers: MVR 10/transfer
+        
+        🌏 International:
+        - SWIFT: 0.3% (min $25)
+        - RemitNow: $5 flat fee
+        - Western Union: Varies by amount
+        
+        💡 Fee Saving Tips:
+        - Use mobile banking
+        - Bundle transfers
+        - Premium account benefits
+        - Special rate times
+        
+        Want to calculate fees?
+
+  utter_beneficiary_management:  # 47
+    - text: |
+        Manage your beneficiaries:
+        
+        ➕ Add Beneficiaries:
+        1. Local
+           - Account number
+           - Bank details
+           - Reference name
+           
+        2. International
+           - SWIFT code
+           - Full bank address
+           - Account IBAN
+        
+        🔄 Management Features:
+        - Edit details
+        - Delete inactive
+        - Categories
+        - Favorites
+        
+        Ready to manage recipients?
+
+  utter_standing_order:  # 48
+    - text: |
+        Set up automatic payments:
+        
+        ⏰ Standing Order Types:
+        1. Fixed Amount
+           - Bills
+           - Rent
+           - Subscriptions
+           
+        2. Variable Amount
+           - Credit card
+           - Utility bills
+           - Percentage transfers
+        
+        📋 Setup Options:
+        - Frequency selection
+        - Start/end dates
+        - Failed payment alerts
+        - Auto-retry
+        
+        Need help setting up?
+
+  utter_exchange_rates:  # 49
+    - text: |
+        Current exchange rates:
+        
+        💱 Major Currencies:
+        - USD Buy: 15.42 / Sell: 15.85
+        - EUR Buy: 16.80 / Sell: 17.20
+        - GBP Buy: 19.50 / Sell: 19.90
+        - JPY Buy: 0.105 / Sell: 0.108
+        
+        🕒 Rate Updates:
+        - Morning: 9:00 AM
+        - Afternoon: 2:00 PM
+        - Special rates available
+        
+        📊 Rate Features:
+        - Live updates
+        - Rate alerts
+        - Rate calculator
+        - Historical rates
+        
+        Need to exchange currency?
+
+  utter_transfer_status:  # 50
+    - text: |
+        Track your transfer status:
+        
+        📱 Digital Tracking:
+        1. Mobile Banking
+           - Real-time updates
+           - Push notifications
+           - Transfer history
+           
+        2. Internet Banking
+           - Detailed status
+           - PDF confirmation
+           - Email updates
+        
+        🔍 Status Types:
+        - Initiated
+        - Processing
+        - Completed
+        - Rejected
+        
+        💡 Support Options:
+        - Track by reference
+        - Chat support
+        - Email updates
+        - SMS alerts
+        
+        Need to check a transfer?
+
+rules:
+  - rule: Say goodbye anytime
+    steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+  - rule: Greet user
+    steps:
+    - intent: greet
+    - action: utter_greet
+
+  - rule: Thank response
+    steps:
+    - intent: thank
+    - action: utter_thank
+
+  - rule: Help request
+    steps:
+    - intent: help
+    - action: utter_help
+
+  - rule: Out of scope
+    steps:
+    - intent: out_of_scope
+    - action: utter_out_of_scope
+
+  - rule: Restart conversation
+    steps:
+    - intent: restart
+    - action: utter_restart
+
+  - rule: Human handoff
+    steps:
+    - intent: human_handoff
+    - action: utter_human_handoff
+
+  - rule: Show menu
+    steps:
+    - intent: menu
+    - action: utter_menu
+
+  - rule: Handle affirmation
+    steps:
+    - intent: affirm
+    - action: utter_affirm
+
+  - rule: Handle denial
+    steps:
+    - intent: deny
+    - action: utter_deny

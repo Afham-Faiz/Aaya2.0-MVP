@@ -1,0 +1,241 @@
+version: "3.1"
+stories:
+  - story: greet and help
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: help
+      - action: utter_help
+
+  - story: goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: affirm and assist
+    steps:
+      - intent: affirm
+      - action: utter_affirm
+      - intent: help
+      - action: utter_help
+
+  - story: deny and offer help
+    steps:
+      - intent: deny
+      - action: utter_deny
+
+  - story: thank user
+    steps:
+      - intent: thank
+      - action: utter_thank
+
+  - story: show menu
+    steps:
+      - intent: menu
+      - action: utter_menu
+
+  - story: human handoff
+    steps:
+      - intent: human_handoff
+      - action: utter_human_handoff
+
+  - story: restart conversation
+    steps:
+      - intent: restart
+      - action: utter_restart
+
+  - story: out of scope
+    steps:
+      - intent: out_of_scope
+      - action: utter_out_of_scope
+
+  - story: inquire about account types
+    steps:
+      - intent: account_types
+      - action: utter_account_types
+
+  - story: inquire about account opening
+    steps:
+      - intent: account_opening
+      - action: utter_account_opening
+
+  - story: inquire about minimum balance
+    steps:
+      - intent: minimum_balance
+      - action: utter_minimum_balance
+
+  - story: inquire about account fees
+    steps:
+      - intent: account_fees
+      - action: utter_account_fees
+
+  - story: inquire about account documents
+    steps:
+      - intent: account_documents
+      - action: utter_account_documents
+
+  - story: inquire about savings interest
+    steps:
+      - intent: savings_interest
+      - action: utter_savings_interest
+
+  - story: inquire about joint account
+    steps:
+      - intent: joint_account
+      - action: utter_joint_account
+
+  - story: inquire about foreign currency account
+    steps:
+      - intent: foreign_currency_account
+      - action: utter_foreign_currency_account
+
+  - story: inquire about Islamic account
+    steps:
+      - intent: islamic_account
+      - action: utter_islamic_account
+
+  - story: inquire about account status
+    steps:
+      - intent: account_status
+      - action: utter_account_status
+
+  - story: inquire about mobile banking registration
+    steps:
+      - intent: mobile_banking_register
+      - action: utter_mobile_banking_register
+
+  - story: inquire about internet banking registration
+    steps:
+      - intent: internet_banking_register
+      - action: utter_internet_banking_register
+
+  - story: inquire about password reset
+    steps:
+      - intent: reset_password
+      - action: utter_reset_password
+
+  - story: inquire about forgot username
+    steps:
+      - intent: forgot_username
+      - action: utter_forgot_username
+
+  - story: inquire about login issues
+    steps:
+      - intent: login_issues
+      - action: utter_login_issues
+
+  - story: inquire about app download
+    steps:
+      - intent: app_download
+      - action: utter_app_download
+
+  - story: inquire about app features
+    steps:
+      - intent: app_features
+      - action: utter_app_features
+
+  - story: inquire about transaction limits
+    steps:
+      - intent: transaction_limits
+      - action: utter_transaction_limits
+
+  - story: inquire about digital security
+    steps:
+      - intent: digital_security
+      - action: utter_digital_security
+
+
+  - story: inquire about card types
+    steps:
+      - intent: card_types
+      - action: utter_card_types
+
+  - story: inquire about card application
+    steps:
+      - intent: card_application
+      - action: utter_card_application
+
+  - story: inquire about card activation
+    steps:
+      - intent: card_activation
+      - action: utter_card_activation
+
+  - story: inquire about card blocking
+    steps:
+      - intent: card_blocking
+      - action: utter_card_blocking
+
+  - story: inquire about card limits
+    steps:
+      - intent: card_limits
+      - action: utter_card_limits
+
+  - story: inquire about card fees
+    steps:
+      - intent: card_fees
+      - action: utter_card_fees
+
+  - story: inquire about card replacement
+    steps:
+      - intent: card_replacement
+      - action: utter_card_replacement
+
+  - story: inquire about international usage
+    steps:
+      - intent: international_usage
+      - action: utter_international_usage
+
+  - story: inquire about reporting lost card
+    steps:
+      - intent: report_lost_card
+      - action: utter_report_lost_card
+
+  - story: inquire about balance inquiry
+    steps:
+      - intent: balance_inquiry
+      - action: utter_balance_inquiry
+
+  - story: inquire about fund transfer
+    steps:
+      - intent: fund_transfer
+      - action: utter_fund_transfer
+
+  - story: inquire about bill payment
+    steps:
+      - intent: bill_payment
+      - action: utter_bill_payment
+
+  - story: inquire about utility payment
+    steps:
+      - intent: utility_payment
+      - action: utter_utility_payment
+
+  - story: inquire about international transfer
+    steps:
+      - intent: international_transfer
+      - action: utter_international_transfer
+
+  - story: inquire about transfer charges
+    steps:
+      - intent: transfer_charges
+      - action: utter_transfer_charges
+
+  - story: inquire about beneficiary management
+    steps:
+      - intent: beneficiary_management
+      - action: utter_beneficiary_management
+
+  - story: inquire about standing order
+    steps:
+      - intent: standing_order
+      - action: utter_standing_order
+
+  - story: inquire about exchange rates
+    steps:
+      - intent: exchange_rates
+      - action: utter_exchange_rates
+
+  - story: inquire about transfer status
+    steps:
+      - intent: transfer_status
+      - action: utter_transfer_status
