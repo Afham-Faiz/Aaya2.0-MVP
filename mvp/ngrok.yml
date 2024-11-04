@@ -1,0 +1,12 @@
+version: "2"
+
+authtoken: 2oIlnWamyy2Urh5QgLQiBoskw39_6FDB18oXTrt3M3XuVxQix
+
+tunnels:
+  server:
+    proto: http
+    addr: 3001  # Port for your Express server
+
+  app:
+    proto: http
+    addr: 3000  # Port for your React app

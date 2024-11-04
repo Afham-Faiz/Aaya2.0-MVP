@@ -51,6 +51,19 @@ intents:
   - standing_order      # 48
   - exchange_rates      # 49
   - transfer_status     # 50
+  - query_location
+  - report_fraud
+  - loans_and_credit
+  - classic_debit_details  
+  - gold_debit_details     
+  - platinum_debit_details 
+  - classic_credit_details 
+  - gold_credit_details    
+  - platinum_credit_details
+  - infinite_credit_details
+  - compare_debit_cards    
+  - compare_credit_cards    
+
 
 responses:
   utter_greet:  # 1
@@ -962,6 +975,263 @@ responses:
         
         Need to check a transfer?
 
+  utter_query_location:
+    - text: |
+        I can help you find our nearest branch or ATM:
+        
+        🏢 Branch Finder:
+        - Online map: www.bankofmaldives.com.mv/locations
+        - Call: 332 2948 for directions
+        - All branches open 8:00 AM - 4:30 PM
+        
+        🏧 ATM Finder:
+        - 24/7 ATMs available
+        - Cash deposit/withdrawal
+        - Check deposit at select locations
+        
+        Would you like me to help you find a specific location?
+
+  utter_report_fraud:
+    - text: |
+        I understand this is concerning. Let's secure your account immediately:
+        
+        🚫 Immediate Actions:
+        1. Your account will be temporarily frozen
+        2. Card will be blocked
+        3. Fraud team notified
+        
+        📞 Please call urgently:
+        - 24/7 Fraud Hotline: 332 2948
+        - Fraud Team Email: fraud@bml.com.mv
+        
+        🔍 Have ready:
+        - Suspicious transaction details
+        - Last legitimate transaction
+        - Recent account activity
+        
+        Do you need immediate assistance?
+
+  utter_loans_and_credit:
+    - text: |
+        Here are our loan and credit options:
+        
+        💰 Personal Loans:
+        - Up to MVR 500,000
+        - From 9% p.a.
+        - Up to 5 years term
+        
+        🏠 Home Loans:
+        - Up to MVR 3 million
+        - From 8% p.a.
+        - Up to 20 years term
+        
+        🚗 Vehicle Loans:
+        - Up to MVR 1 million
+        - From 8.5% p.a.
+        - Up to 7 years term
+        
+        💼 Business Loans:
+        - Customized solutions
+        - Competitive rates
+        - Flexible terms   
+
+        Would you like to know more about any specific loan type? 
+
+  utter_classic_debit_details:
+    - text: |
+        BML Classic Debit Card:
+        
+        💳 Key Features:
+        - Visa Classic Debit
+        - Daily ATM: MVR 15,000
+        - POS: MVR 50,000
+        - Annual fee: MVR 180
+        
+        Best for: Everyday banking & new customers.
+        
+        Would you like to:
+        1. Apply now
+        2. Compare with Gold/Platinum
+        3. View fees
+        4. Check eligibility
+
+  utter_gold_debit_details:
+    - text: |
+        BML Gold Debit Card:
+        
+        💳 Exclusive Features:
+        - 2x reward points
+        - Daily ATM: MVR 25,000
+        - POS: MVR 75,000
+        - Annual fee: MVR 600
+        - Airport lounge discount
+        - Enhanced travel insurance
+        
+        Best for: Frequent shoppers & travelers.
+        
+        Would you like to:
+        1. Apply now
+        2. Compare with Platinum
+        3. View privileges
+        4. Check eligibility
+
+  utter_platinum_debit_details:
+    - text: |
+        BML Platinum Debit Card:
+        
+        💳 Premium Features:
+        - 3x reward points
+        - Daily ATM: MVR 50,000
+        - POS: MVR 150,000
+        - Annual fee: MVR 1,200
+        - Complimentary airport lounge
+        - Concierge services
+        
+        Best for: Premium clients & frequent travelers.
+        
+        Would you like to:
+        1. Apply now
+        2. View privileges
+        3. Meet relationship manager
+        4. Check eligibility
+
+  utter_classic_credit_details:
+    - text: |
+        BML Classic Credit Card:
+        
+        💳 Features:
+        - 3% cashback
+        - Starting limit: MVR 5,000
+        - Annual fee: MVR 180
+        - Interest rate: 18% p.a.
+        
+        Best for: First-time credit card users.
+        
+        Would you like to:
+        1. Apply now
+        2. Compare cards
+        3. Calculate limit
+        4. Check eligibility
+
+  utter_gold_credit_details:
+    - text: |
+        BML Gold Credit Card:
+        
+        💳 Enhanced Features:
+        - 5% cashback
+        - Starting limit: MVR 15,000
+        - Annual fee: MVR 600
+        - Interest rate: 16% p.a.
+        - Travel insurance
+        - Purchase protection
+        
+        Best for: Regular spenders & travelers.
+        
+        Would you like to:
+        1. Apply now
+        2. View benefits
+        3. Calculate rewards
+        4. Check eligibility
+
+  utter_platinum_credit_details:
+    - text: |
+        BML Platinum Credit Card:
+        
+        💳 Premium Features:
+        - 7% cashback
+        - Starting limit: MVR 50,000
+        - Annual fee: MVR 1,200
+        - Interest rate: 15% p.a.
+        - Golf privileges
+        - Global concierge
+        
+        Best for: Luxury lifestyle & high spenders.
+        
+        Would you like to:
+        1. Apply now
+        2. View privileges
+        3. Meet relationship manager
+        4. Check eligibility
+
+  utter_infinite_credit_details:
+    - text: |
+        BML Infinite Credit Card:
+        
+        💳 Ultra-Premium Features:
+        - 10% cashback
+        - Starting limit: MVR 100,000
+        - Annual fee: MVR 2,400
+        - Interest rate: 14% p.a.
+        - Private jet access
+        - Luxury concierge
+        
+        Best for: Elite clients & luxury consumers.
+        
+        Would you like to:
+        1. Apply now
+        2. View privileges
+        3. Meet private banker
+        4. Check eligibility
+
+  utter_compare_debit_cards:
+    - text: |
+        BML Debit Card Comparison:
+        
+        💳 Quick Compare:
+        
+        Classic:
+        - ATM: 15k/day
+        - Annual: MVR 180
+        - Basic features
+        
+        Gold:
+        - ATM: 25k/day
+        - Annual: MVR 600
+        - 2x rewards
+        
+        Platinum:
+        - ATM: 50k/day
+        - Annual: MVR 1,200
+        - 3x rewards
+        
+        Would you like details about:
+        1. Classic Debit
+        2. Gold Debit
+        3. Platinum Debit
+        4. See full comparison table
+
+  utter_compare_credit_cards:
+    - text: |
+        BML Credit Card Comparison:
+        
+        💳 Quick Compare:
+        
+        Classic:
+        - 3% cashback
+        - MVR 180/year
+        - Basic benefits
+        
+        Gold:
+        - 5% cashback
+        - MVR 600/year
+        - Travel benefits
+        
+        Platinum:
+        - 7% cashback
+        - MVR 1,200/year
+        - Premium benefits
+        
+        Infinite:
+        - 10% cashback
+        - MVR 2,400/year
+        - Ultra-premium
+        
+        Would you like details about:
+        1. Specific card
+        2. Benefits comparison
+        3. Calculate best value
+        4. See full comparison
+
 rules:
   - rule: Say goodbye anytime
     steps:
@@ -1012,3 +1282,19 @@ rules:
     steps:
     - intent: deny
     - action: utter_deny
+
+  - rule: Location query
+    steps:
+    - intent: query_location
+    - action: utter_query_location
+
+  - rule: Report fraud
+    steps:
+    - intent: report_fraud
+    - action: utter_report_fraud
+
+  - rule: Loans and credit
+    steps:
+    - intent: loans_and_credit
+    - action: utter_loans_and_credit  
+
