@@ -224,3 +224,118 @@ stories:
     steps:
       - intent: transfer_status
       - action: utter_transfer_status
+
+  - story: query bank location
+    steps:
+      - intent: query_location
+      - action: utter_query_location
+
+  - story: report fraud incident
+    steps:
+      - intent: report_fraud
+      - action: utter_report_fraud
+
+  - story: inquire about loans and credit
+    steps:
+      - intent: loans_and_credit
+      - action: utter_loans_and_credit
+
+  # Debit Card Details Stories
+  - story: classic debit card information
+    steps:
+      - intent: classic_debit_details
+      - action: utter_classic_debit_details
+
+  - story: gold debit card information
+    steps:
+      - intent: gold_debit_details
+      - action: utter_gold_debit_details
+
+  - story: platinum debit card information
+    steps:
+      - intent: platinum_debit_details
+      - action: utter_platinum_debit_details
+
+  # Credit Card Details Stories
+  - story: classic credit card information
+    steps:
+      - intent: classic_credit_details
+      - action: utter_classic_credit_details
+
+  - story: gold credit card information
+    steps:
+      - intent: gold_credit_details
+      - action: utter_gold_credit_details
+
+  - story: platinum credit card information
+    steps:
+      - intent: platinum_credit_details
+      - action: utter_platinum_credit_details
+
+  - story: infinite credit card information
+    steps:
+      - intent: infinite_credit_details
+      - action: utter_infinite_credit_details
+
+  # Card Comparison Stories
+  - story: compare debit cards
+    steps:
+      - intent: compare_debit_cards
+      - action: utter_compare_debit_cards
+
+  - story: compare credit cards
+    steps:
+      - intent: compare_credit_cards
+      - action: utter_compare_credit_cards
+
+  - story: compare debit cards then ask specific debit card
+    steps:
+      - intent: compare_debit_cards
+      - action: utter_compare_debit_cards
+      - intent: gold_debit_details
+      - action: utter_gold_debit_details
+
+  - story: compare credit cards then ask specific credit card
+    steps:
+      - intent: compare_credit_cards
+      - action: utter_compare_credit_cards
+      - intent: platinum_credit_details
+      - action: utter_platinum_credit_details
+
+  - story: ask about location then loans
+    steps:
+      - intent: query_location
+      - action: utter_query_location
+      - intent: loans_and_credit
+      - action: utter_loans_and_credit
+
+  - story: compare cards and report fraud
+    steps:
+      - intent: compare_credit_cards
+      - action: utter_compare_credit_cards
+      - intent: report_fraud
+      - action: utter_report_fraud
+
+  - story: debit card comparison and details flow
+    steps:
+      - intent: compare_debit_cards
+      - action: utter_compare_debit_cards
+      - intent: classic_debit_details
+      - action: utter_classic_debit_details
+      - intent: gold_debit_details
+      - action: utter_gold_debit_details
+      - intent: platinum_debit_details
+      - action: utter_platinum_debit_details
+
+  - story: credit card comparison and details flow
+    steps:
+      - intent: compare_credit_cards
+      - action: utter_compare_credit_cards
+      - intent: classic_credit_details
+      - action: utter_classic_credit_details
+      - intent: gold_credit_details
+      - action: utter_gold_credit_details
+      - intent: platinum_credit_details
+      - action: utter_platinum_credit_details
+      - intent: infinite_credit_details
+      - action: utter_infinite_credit_details
