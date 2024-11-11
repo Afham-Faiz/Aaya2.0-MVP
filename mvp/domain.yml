@@ -62,13 +62,14 @@ intents:
   - platinum_credit_details
   - infinite_credit_details
   - compare_debit_cards    
-  - compare_credit_cards    
+  - compare_credit_cards  
+  - nlu_fallback  
 
 
 responses:
   utter_greet:  # 1
-    - text: "Welcome to Bank of Maldives! I'm your personal banking assistant. How can I make your banking experience better today?"
-    - text: "Hello! Thank you for choosing Bank of Maldives. I'm here to help you with all your banking needs. What would you like to explore?"
+    - text: "Welcome to Bank of Maldives! I'm Aaya, your personal banking assistant. How can I make your banking experience better today?"
+    - text: "Hello, I'm Aaya! Thank you for choosing Bank of Maldives. I'm here to help you with all your banking needs. What would you like to explore?"
 
   utter_goodbye:  # 2
     - text: "Thank you for banking with BML. Remember, our mobile app is available 24/7 for your convenience. Have a wonderful day!"
@@ -1231,6 +1232,10 @@ responses:
         2. Benefits comparison
         3. Calculate best value
         4. See full comparison
+      
+  utter_default:
+   - text: "I'm not sure I understand. Could you rephrase that?"
+   - text: "Sorry, I didn't get that. Can you try again?"
 
 rules:
   - rule: Say goodbye anytime
@@ -1298,3 +1303,7 @@ rules:
     - intent: loans_and_credit
     - action: utter_loans_and_credit  
 
+  - rule: Fallback
+    steps:
+      - intent: nlu_fallback
+      - action: utter_default

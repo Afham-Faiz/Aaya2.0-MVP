@@ -1,6 +1,6 @@
 version: "2"
 
-authtoken: 2oIlnWamyy2Urh5QgLQiBoskw39_6FDB18oXTrt3M3XuVxQix
+authtoken: 2oOfAybhxrnv1JxlzXIoRs4InLs_65jHtoSJ5JuNTVcQn5Yzn
 
 tunnels:
   server:
@@ -9,4 +9,4 @@ tunnels:
 
   app:
     proto: http
-    addr: 3000  # Port for your React app
+    addr: 3002  # Port for your React app
